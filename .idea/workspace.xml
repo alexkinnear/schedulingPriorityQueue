@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d75f1b2-5dcd-48c6-a492-a666c8408da2" name="Default Changelist" comment="" />
+    <list default="true" id="5d75f1b2-5dcd-48c6-a492-a666c8408da2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/taskset1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/taskset2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/taskset3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/taskset4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/taskset5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LeftistHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yx6NFLbrZdVENwdft2IzDd64tr" />
   <component name="ProjectViewState">
@@ -15,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -22,8 +43,23 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestSched" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestSched" />
+      <module name="cs2420HW5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestSched" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,15 +75,24 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="466" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584127707539">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="466" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.816@0.23.1440.816" timestamp="1584127707539" />
     <state x="216" y="23" width="1024" height="821" key="SettingsEditor" timestamp="1583872814028">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="216" y="23" width="1024" height="821" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1583872758344" />
     <state x="216" y="23" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1583872814028" />
-    <state x="407" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1583872802234">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="407" y="264" key="com.intellij.ide.util.TipDialog" timestamp="1584127659860">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
+    <state x="407" y="264" key="com.intellij.ide.util.TipDialog/0.23.1440.816@0.23.1440.816" timestamp="1584127659860" />
     <state x="407" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1583871858142" />
     <state x="407" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1583872802234" />
+    <state x="122" y="53" key="new project wizard" timestamp="1584141593353">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="122" y="53" key="new project wizard/0.23.1440.816@0.23.1440.816" timestamp="1584141593353" />
   </component>
 </project>
