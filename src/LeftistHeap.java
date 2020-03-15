@@ -14,6 +14,10 @@ public class LeftistHeap<E extends Comparable<E>> {
         rightSubTree.root = null;
     }
 
+    public boolean isEmpty() {
+        return root == null;
+    }
+
     private LeftistNode<E> merge(LeftistNode<E> tree1, LeftistNode<E> tree2) {
         if(tree1 == null)
             return tree2;
@@ -92,6 +96,7 @@ public class LeftistHeap<E extends Comparable<E>> {
 
     public static void main(String[] args) {
         LeftistHeap<Integer> intHeap = new LeftistHeap<>();
+        LeftistHeap<String> stringHeap = new LeftistHeap<>();
         for (int i = 0; i < 300; i += 10) {
             intHeap.insert(i);
         }
@@ -102,6 +107,19 @@ public class LeftistHeap<E extends Comparable<E>> {
             System.out.println(intHeap.deleteMin());
         }
         intHeap.printTree();
+
+
+//        for (int i = 0; i < 300; i += 10) {
+//            stringHeap.insert(i+"");
+//        }
+//        for (int i = 0; i < 50; i++) {
+//            stringHeap.insert(i+"");
+//        }
+//        for (int i = 0; i < 25; i++) {
+//            System.out.println(stringHeap.deleteMin());
+//        }
+//        stringHeap.printTree();
+
     }
 
 }

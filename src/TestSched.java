@@ -1,18 +1,34 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+
 import java.util.*;
 
 public class TestSched {
 
 
-    public static void readTasks(String filename,
-                          ArrayList<Task> task1, ArrayList<Task> task2,
-                                 ArrayList<Task> task3) {
-        // Create lists where base type is different
 
+    public static void readTasks(String filename, ArrayList<Task> task1, ArrayList<Task> task2, ArrayList<Task> task3) throws FileNotFoundException {
+        int count = 1;
+        Scanner fileScanner = new Scanner(new File("data/"+filename));
+        while(fileScanner.hasNextLine()) {
+            String line = fileScanner.nextLine();
+            line = line.replaceAll("[ \\s+]", " ");
+            String[] arr  = line.split(" ");
+            ArrayList<Integer> arr2 = new ArrayList<Integer>();
+            for (String s : arr) {
+                if (!s.equals("")) {
+                    arr2.add(Integer.parseInt(s));
+                }
+            }
+
+            Task task = new Task(count, arr2.get(0), arr2.get(1), arr2.get(2));
+            count++;
+            task1.add(task);
+        }
+        task2 = task3 = task1;
     }
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws FileNotFoundException {
         Scheduler s = new Scheduler();
         String [] files = {"taskset1.txt","taskset2.txt","taskset3.txt","taskset4.txt","taskset5.txt" };
         for (String f : files) {

@@ -28,8 +28,8 @@ public class Task implements Comparable<Task> {
 
 
     public int compareTo(Task t2) {
-        System.out.println("NO compareTo");
-        // Supply your own comparator method
+        if (t2.start > this.start) return -1;
+        else if (t2.start < this.start) return 1;
         return 0;
     }
 
