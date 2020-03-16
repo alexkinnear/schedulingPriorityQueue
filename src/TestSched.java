@@ -22,10 +22,13 @@ public class TestSched {
             }
 
             Task task = new Task(count, arr2.get(0), arr2.get(1), arr2.get(2));
+            Task2 tsk2 = new Task2(count, arr2.get(0), arr2.get(1), arr2.get(2));
+            Task3 tsk3 = new Task3(count, arr2.get(0), arr2.get(1), arr2.get(2));
             count++;
             task1.add(task);
+            task2.add(tsk2);
+            task3.add(tsk3);
         }
-        task2 = task3 = task1;
     }
 
     public static void main(String args[]) throws FileNotFoundException {

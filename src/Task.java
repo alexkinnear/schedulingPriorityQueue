@@ -1,3 +1,4 @@
+// deadline priority as default
 public class Task implements Comparable<Task> {
     public int ID;
     public int start;
@@ -28,8 +29,8 @@ public class Task implements Comparable<Task> {
 
 
     public int compareTo(Task t2) {
-        if (t2.start > this.start) return -1;
-        else if (t2.start < this.start) return 1;
+        if (t2.deadline > this.deadline) return -1;
+        else if (t2.deadline < this.deadline) return 1;
         return 0;
     }
 
