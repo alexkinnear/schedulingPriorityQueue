@@ -1,0 +1,70 @@
+The 3 priorities that I imnplimneted are start time, deadline, and duration.
+The first one prioritizes the deadline so that the task with the nearest deadline
+is done first.
+
+Deadline Priority taskset1.txt
+Time: 1 Task 1
+Time: 2 Task 1
+Time: 3 Task 1 **
+Time: 4 Task 3 **
+Time: 5 Task 6 **
+Time: 6 Task 4
+Time: 7 Task 4 **
+Time: 8 Task 2
+Time: 9 Task 2
+Time: 10 Task 2
+Time: 11 Task 2 ** Late 1
+Time: 12 Task 5
+Time: 13 Task 5
+Time: 14 Task 5
+Time: 15 Task 5
+Time: 16 Task 5 ** Late 5
+Tasks Late: 2 Total Late: 6
+
+The second one simply does the tasks in the order that they become available.
+If multiple tasks become available at the same time, the priority task is the
+one with the nearest deadline.
+
+Startime Priority taskset1.txt
+Time: 1 Task 1
+Time: 2 Task 1
+Time: 3 Task 1 **
+Time: 4 Task 3 **
+Time: 5 Task 2
+Time: 6 Task 2
+Time: 7 Task 2
+Time: 8 Task 2 **
+Time: 9 Task 4
+Time: 10 Task 4 ** Late 1
+Time: 11 Task 6 ** Late 5
+Time: 12 Task 5
+Time: 13 Task 5
+Time: 14 Task 5
+Time: 15 Task 5
+Time: 16 Task 5 ** Late 5
+Tasks Late: 3 Total Late: 11
+
+The third one prioritizes the shortest duration of the tasks. This one can be
+inefficient at times because some of the shorter tasks may become available
+later in the day, but will still be given priority and may leave the start of
+the day unproductive.
+
+Wild and Crazy priority taskset1.txt
+Time: 1 Task 3 **
+Time: 2
+Time: 3 Task 6 **
+Time: 4 Task 4
+Time: 5 Task 4 **
+Time: 6 Task 1
+Time: 7 Task 1
+Time: 8 Task 1 ** Late 3
+Time: 9 Task 2
+Time: 10 Task 2
+Time: 11 Task 2
+Time: 12 Task 2 ** Late 2
+Time: 13 Task 5
+Time: 14 Task 5
+Time: 15 Task 5
+Time: 16 Task 5
+Time: 17 Task 5 ** Late 6
+Tasks Late: 3 Total Late: 11

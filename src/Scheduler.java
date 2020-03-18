@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class Scheduler {
 
     public void makeSchedule(String priority, ArrayList schedule) {
-        int tasksLate= 0, totalLate = 0;
+        int tasksLate= 0;
+        int totalLate = 0;
         System.out.println(priority);
         LeftistHeap<Task> minHeap = new LeftistHeap<>();
         for (Object item : schedule) {
@@ -15,11 +16,17 @@ public class Scheduler {
                 minHeap.insert((Task3) item);
             }
             else
-                minHeap.insert((Task) item);
+                minHeap.insert((Task1) item);
         }
         int time = 1;
         while (!minHeap.isEmpty()) {
             Task current = minHeap.deleteMin();
+            if (time < current.start) {
+                System.out.println("Time: " + time);
+                minHeap.insert(current);
+                time++;
+                continue;
+            }
             for (int i = 1; i <= current.duration; i++) {
                 System.out.print("Time: " + time + " Task " + current.ID + " ");
                 if (i == current.duration) {
